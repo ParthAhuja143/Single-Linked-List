@@ -52,16 +52,6 @@ public:
     return;
   }
 
-  void display(){
-    node* node = this->head;
-    while(node -> NEXT != NULL){
-     cout<<node->data<<"|"<<node->NEXT<<" -> ";
-     node = node->NEXT ;
-    }
-    cout<<node->data<<"\n";
-    return;
-  }
-
   void insertAtK(int value , int pos){
     node* newNode = new node(value);
 
@@ -138,6 +128,16 @@ public:
     }
     return ;
 
+  }
+
+  void display(){
+    node* node = this->head;
+    while(node -> NEXT != NULL){
+     cout<<node->data<<"|"<<node->NEXT<<" -> ";
+     node = node->NEXT ;
+    }
+    cout<<node->data<<"\n";
+    return;
   }
 
 };
