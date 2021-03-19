@@ -55,7 +55,7 @@ public:
   void display(){
     node* node = this->head;
     while(node -> NEXT != NULL){
-     cout<<node->data<<" -> ";
+     cout<<node->data<<"|"<<node->NEXT<<" -> ";
      node = node->NEXT ;
     }
     cout<<node->data<<"\n";
