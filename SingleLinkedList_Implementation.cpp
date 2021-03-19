@@ -109,7 +109,7 @@ public:
    while((--k > 1) && temp){
      temp = temp -> NEXT ;
    }
-   // point previouse element to next element of k
+   // point previous element to next element of k
    temp -> NEXT = temp -> NEXT -> NEXT ;
    // delete k
    delete temp -> NEXT ;
