@@ -130,6 +130,25 @@ public:
 
   }
 
+  void reverse(){
+    node* current = head ;
+
+    node *previous = NULL , *nxt = NULL ;
+    while(current != NULL ){
+      //store next
+      nxt = current -> NEXT ;
+
+      // reverse
+      current -> NEXT = previous ;
+
+      //move
+      previous = current ;
+      current = nxt ;
+    }
+
+    this -> head = previous;
+  }
+
   void display(){
     node* node = this->head;
     while(node -> NEXT != NULL){
@@ -158,7 +177,8 @@ int main(){
   ll.display();
   ll.deleteAtK(4);
   ll.display();
+  ll.reverse();
+  ll.display();
   ll.deleteLinkedList();
   ll.display();
-
 }
