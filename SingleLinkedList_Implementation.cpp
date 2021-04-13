@@ -120,7 +120,7 @@ public:
       return;
     }
 
-    node* temp = head ;
+    node* temp = this -> head ;
     while(temp -> NEXT != NULL){
       node* tempNext = temp -> NEXT ;
       delete temp -> NEXT ;
